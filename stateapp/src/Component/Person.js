@@ -19,11 +19,26 @@ class Person extends Component {
   render() {
     return (
       <>
-        <img src={this.state.ImgSrc} alt="kb" />
-        <div>
-          <h1>
-            {this.state.S}
-          </h1>
+        <img
+          src={this.state.ImgSrc}
+          alt="kb"
+          style={{
+            width: "20%",
+            height: "10%",
+            borderRadius: "50%",
+            margin: "auto 3%",
+          }}
+        />
+        <div
+          style={{
+            padding: "3%",
+            margin: "auto 0",
+            // borderLeft: "solid #ffffff",
+            // backgroundColor: "#b3ffb3	",
+            color: "#fff7e6",
+          }}
+        >
+          <h1>{this.state.S}</h1>
           <h2>{this.state.FullName}</h2>
           <h2>{this.state.Bio}</h2>
           <h2>{this.state.Profession}</h2>
